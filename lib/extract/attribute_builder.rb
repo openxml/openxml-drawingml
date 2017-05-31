@@ -6,7 +6,7 @@ module OpenXml
     end
 
     module ClassMethods
-      def attribute(name, expects: nil, one_of: nil, displays_as: nil, namespace: nil, matches: nil, deprecated: false)
+      def attribute(name, expects: nil, one_of: nil, in_range: nil, displays_as: nil, namespace: nil, matches: nil, deprecated: false)
         bad_names = %w(tag name namespace properties_tag)
         raise ArgumentError if bad_names.member? name
 
@@ -16,6 +16,7 @@ module OpenXml
           valid_in?(value, one_of) unless one_of.nil?
           send(expects, value) unless expects.nil?
           matches?(value, matches) unless matches.nil?
+          in_range?(value, in_range) unless in_range.nil?
           instance_variable_set "@#{name}", value
         end
 
@@ -98,6 +99,11 @@ module OpenXml
       raise ArgumentError, message if !value.is_a?(String) || value.length.zero?
     end
 
+    def in_range?(value, range)
+      message = "Invalid #{name}: must be a number between #{range.begin} and #{range.end}"
+      raise ArgumentError, message unless range.include?(value.to_i)
+    end
+
     def percentage(value)
       message = "Invalid #{name}: must be a percentage"
       raise ArgumentError, message unless value.is_a?(String) && value =~ /-?[0-9]+(\.[0-9]+)?%/ # Regex supplied in sec. 22.9.2.9 of Office Open XML docs
@@ -127,4 +133,3 @@ module OpenXml
 
   end
 end
-
