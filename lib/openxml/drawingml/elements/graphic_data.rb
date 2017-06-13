@@ -1,8 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class GraphicData < OpenXml::Container
-        namespace :a
+      class GraphicData < OpenXml::DrawingML::Element
+        include HasChildren
 
         attribute :uri, expects: :string
 

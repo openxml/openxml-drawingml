@@ -1,7 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class TransformEffect < OpenXml::Container
+      class TransformEffect < OpenXml::DrawingML::Element
+        include HasChildren
+
         namespace :a
         tag :xfrm
 

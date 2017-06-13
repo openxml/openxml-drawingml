@@ -1,8 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class PresetGeometry < OpenXml::Container
-        namespace :a
+      class PresetGeometry < OpenXml::DrawingML::Element
+        include HasChildren
+
         tag :prstGeom
 
         attribute :preset, expects: :valid_geometry_preset, displays_as: :prst

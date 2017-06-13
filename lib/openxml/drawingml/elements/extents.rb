@@ -1,8 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class Extents < OpenXml::Element
-        namespace :a
+      class Extents < OpenXml::DrawingML::Element
         tag :ext
 
         attribute :extent_length, expects: :positive_integer, displays_as: :cx

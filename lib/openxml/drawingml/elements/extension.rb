@@ -1,8 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class Extension < OpenXml::Element
-        namespace :a
+      class Extension < OpenXml::DrawingML::Element
         tag :ext
 
         attribute :uri, expects: :string

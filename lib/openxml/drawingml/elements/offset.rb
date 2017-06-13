@@ -1,7 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class Offset < OpenXml::Element
+      class Offset < OpenXml::DrawingML::Element
         namespace :a
         tag :off
 

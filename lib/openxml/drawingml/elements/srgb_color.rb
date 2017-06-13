@@ -1,8 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class SRGBColor < OpenXml::Element
-        namespace :a
+      class SRGBColor < OpenXml::DrawingML::Element
         tag :srgbClr
         name "srgb_color"
 

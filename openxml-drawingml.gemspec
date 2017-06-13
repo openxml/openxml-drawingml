@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = "~> 2.0"
 
   spec.add_dependency "nokogiri"
-  spec.add_dependency "openxml-package", ">= 0.2.2"
+  spec.add_dependency "openxml-package", "~> 0.2.9"
 
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rspec"

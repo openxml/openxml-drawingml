@@ -1,9 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class Round < OpenXml::Element
-        namespace :a
-
+      class Round < OpenXml::DrawingML::Element
       end
     end
   end

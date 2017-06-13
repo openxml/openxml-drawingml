@@ -1,8 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class GraphicFrameLocks < OpenXml::Element
-        namespace :a
+      class GraphicFrameLocks < OpenXml::DrawingML::Element
 
         attribute :disallow_aspect_ratio_changes, expects: :boolean, displays_as: :noChangeAspect
         attribute :disallow_drilldown, expects: :boolean, displays_as: :noDrilldown

@@ -1,7 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class PictureLocks < OpenXml::Element
+      class PictureLocks < OpenXml::DrawingML::Element
         namespace :a
         tag :picLocks
 

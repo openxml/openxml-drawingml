@@ -1,8 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class Blip < OpenXml::Container
-        namespace :a
+      class Blip < OpenXml::DrawingML::Element
+        include HasChildren
+
         tag :blip
 
         attribute :compression_state, one_of: %i(email hqprint none print screen), displays_as: :cstate
