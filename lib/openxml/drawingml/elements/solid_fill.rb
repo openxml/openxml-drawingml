@@ -4,6 +4,8 @@ module OpenXml
       class SolidFill < OpenXml::DrawingML::Element
         include HasChildren
 
+        tag :solidFill
+
       end
     end
   end

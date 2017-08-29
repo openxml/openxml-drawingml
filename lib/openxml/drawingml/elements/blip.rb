@@ -6,7 +6,7 @@ module OpenXml
 
         tag :blip
 
-        attribute :compression_state, one_of: %i(email hqprint none print screen), displays_as: :cstate
+        attribute :compression_state, one_of: %i{ email hqprint none print screen }, displays_as: :cstate
 
         with_namespace :r do
           attribute :embed, expects: :string
