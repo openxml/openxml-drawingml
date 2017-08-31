@@ -1,7 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class ChildrenOffset < OpenXml::DrawingML::Element
+      class ChildrenOffset < OpenXml::Element
+        namespace :a
         tag :chOff
 
         attribute :x, expects: :integer

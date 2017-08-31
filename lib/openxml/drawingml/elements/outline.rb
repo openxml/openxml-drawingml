@@ -1,9 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class Outline < OpenXml::DrawingML::Element
+      class Outline < OpenXml::Element
         include HasChildren
-
+        namespace :a
         tag :ln
 
         attribute :alignment, expects: :valid_stroke_alignment, displays_as: :algn

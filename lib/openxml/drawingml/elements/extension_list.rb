@@ -1,9 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class ExtensionList < OpenXml::DrawingML::Element
+      class ExtensionList < OpenXml::Element
         include HasChildren
-
+        namespace :a
         tag :extLst
 
       end

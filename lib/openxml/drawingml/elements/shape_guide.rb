@@ -1,7 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class ShapeGuide < OpenXml::DrawingML::Element
+      class ShapeGuide < OpenXml::Element
         namespace :a
         tag :gd
 

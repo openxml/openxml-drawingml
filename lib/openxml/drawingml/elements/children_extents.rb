@@ -1,7 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class ChildrenExtents < OpenXml::DrawingML::Element
+      class ChildrenExtents < OpenXml::Element
+        namespace :a
         tag :chExt
 
         attribute :extent_length, expects: :positive_integer, displays_as: :cx

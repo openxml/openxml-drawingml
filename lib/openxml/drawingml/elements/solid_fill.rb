@@ -1,9 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class SolidFill < OpenXml::DrawingML::Element
+      class SolidFill < OpenXml::Element
         include HasChildren
-
+        namespace :a
         tag :solidFill
 
       end

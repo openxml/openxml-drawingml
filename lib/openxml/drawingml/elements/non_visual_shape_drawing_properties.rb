@@ -1,9 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class NonVisualShapeDrawingProperties < OpenXml::DrawingML::Element
+      class NonVisualShapeDrawingProperties < OpenXml::Element
         include HasChildren
-
         namespace :wps
         tag :cNvSpPr
 

@@ -1,7 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class FillRectangle < OpenXml::DrawingML::Element
+      class FillRectangle < OpenXml::Element
+        namespace :a
         tag :fillRect
 
         attribute :bottom_offset, expects: :percentage, displays_as: :b

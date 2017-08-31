@@ -1,9 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class AdjustValuesList < OpenXml::DrawingML::Element
+      class AdjustValuesList < OpenXml::Element
         include HasChildren
-
+        namespace :a
         tag :avLst
 
       end

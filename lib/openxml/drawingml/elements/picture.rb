@@ -1,9 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class Picture < OpenXml::DrawingML::Element
+      class Picture < OpenXml::Element
         include HasChildren
-
         namespace :pic
         tag :pic
 

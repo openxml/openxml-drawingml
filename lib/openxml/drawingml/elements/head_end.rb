@@ -1,7 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class HeadEnd < OpenXml::DrawingML::Element
+      class HeadEnd < OpenXml::Element
+        namespace :a
+        tag :headEnd
 
         attribute :length, expects: :valid_end_size, displays_as: :len
         attribute :type, expects: :valid_end_type
