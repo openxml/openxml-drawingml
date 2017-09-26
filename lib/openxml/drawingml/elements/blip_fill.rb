@@ -1,9 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class BlipFill < OpenXml::DrawingML::Element
+      class BlipFill < OpenXml::Element
         include HasChildren
-
         namespace :pic
         tag :blipFill
 

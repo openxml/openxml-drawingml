@@ -1,9 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class NonVisualPictureDrawingProperties < OpenXml::DrawingML::Element
+      class NonVisualPictureDrawingProperties < OpenXml::Element
         include HasChildren
-
         namespace :pic
         tag :cNvPicPr
 

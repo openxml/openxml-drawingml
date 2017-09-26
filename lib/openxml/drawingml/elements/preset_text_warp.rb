@@ -1,9 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class PresetTextWarp < OpenXml::DrawingML::Element
+      class PresetTextWarp < OpenXml::Element
         include HasChildren
-
         namespace :a
         tag :prstTxWarp
 

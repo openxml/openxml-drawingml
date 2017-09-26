@@ -1,7 +1,9 @@
 module OpenXml
   module DrawingML
     module Elements
-      class TailEnd < OpenXml::DrawingML::Element
+      class TailEnd < OpenXml::Element
+        namespace :a
+        tag :tailEnd
 
         attribute :length, expects: :valid_end_size, displays_as: :len
         attribute :type, expects: :valid_end_type

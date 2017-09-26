@@ -1,9 +1,8 @@
 module OpenXml
   module DrawingML
     module Elements
-      class PictureShapeProperties < OpenXml::DrawingML::Element
+      class PictureShapeProperties < OpenXml::Element
         include HasChildren
-
         namespace :pic
         tag :spPr
 

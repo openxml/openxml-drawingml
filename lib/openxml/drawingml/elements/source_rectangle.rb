@@ -1,7 +1,7 @@
 module OpenXml
   module DrawingML
     module Elements
-      class SourceRectangle < OpenXml::DrawingML::Element
+      class SourceRectangle < OpenXml::Element
         namespace :a
         tag :srcRect
 

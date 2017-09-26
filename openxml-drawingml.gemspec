@@ -6,8 +6,8 @@ require "openxml/drawingml/version"
 Gem::Specification.new do |spec|
   spec.name          = "openxml-drawingml"
   spec.version       = OpenXml::DrawingML::VERSION
-  spec.authors       = ["Amos King", "Bob Lail"]
-  spec.email         = ["amos@binarynoggin.com", "bob.lailfamily@gmail.com"]
+  spec.authors       = ["Amos King", "Bob Lail", "Matt Kobs"]
+  spec.email         = ["amos@binarynoggin.com", "bob.lailfamily@gmail.com", "matt.kobs@gmail.com"]
 
   spec.description   = %q{Build drawingml files for open xml formats}
   spec.summary       = %q{Implements the Office Open XML spec for DrawingML}
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = "~> 2.0"
 
   spec.add_dependency "nokogiri"
-  spec.add_dependency "openxml-package", "~> 0.2.9"
+  spec.add_dependency "openxml-package", "~> 0.3.2"
 
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rspec"
