@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/openxml/openxml-package.git
+  revision: 18441be305fd5e1b694e835262516bdb5e5eea0a
+  branch: dont-skip-whitespace
+  specs:
+    openxml-package (0.3.2)
+      nokogiri
+      ox
+      rubyzip (~> 1.2.1)
+
 PATH
   remote: .
   specs:
@@ -16,10 +26,6 @@ GEM
     mini_portile2 (2.3.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
-    openxml-package (0.3.2)
-      nokogiri
-      ox
-      rubyzip (~> 1.2.1)
     ox (2.8.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -54,6 +60,7 @@ PLATFORMS
 
 DEPENDENCIES
   openxml-drawingml!
+  openxml-package!
   pry
   rake
   rr
