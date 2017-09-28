@@ -1,3 +1,5 @@
+require "openxml/drawingml/properties/line_property"
+
 module OpenXml
   module DrawingML
     module Properties

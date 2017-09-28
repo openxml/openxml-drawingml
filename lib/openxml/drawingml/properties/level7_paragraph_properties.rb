@@ -1,3 +1,5 @@
+require "openxml/drawingml/properties/paragraph_properties"
+
 module OpenXml
   module DrawingML
     module Properties
