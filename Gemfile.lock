@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    openxml-drawingml (0.1.0)
+    openxml-drawingml (0.2.0)
       nokogiri
       openxml-package (~> 0.3.2)
 
