@@ -1,3 +1,5 @@
+require "openxml/drawingml/properties/font_collection_property"
+
 module OpenXml
   module DrawingML
     module Properties

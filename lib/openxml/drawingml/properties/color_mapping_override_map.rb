@@ -1,3 +1,5 @@
+require "openxml/drawingml/properties/color_mapping"
+
 module OpenXml
   module DrawingML
     module Properties
