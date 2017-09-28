@@ -6,12 +6,12 @@ module OpenXml
         attribute :index, displays_as: :idx, expects: :positive_integer, required: true
 
         property_choice required: true do
-          property :component_rgb, klass: OpenXml::DrawingML::Properties::ColorComponentRgb
-          value_property :rgb, klass: OpenXml::DrawingML::Properties::ColorHexRgb
-          property :hsl, klass: OpenXml::DrawingML::Properties::ColorHsl
-          value_property :system_color, klass: OpenXml::DrawingML::Properties::ColorSystemColor
-          value_property :scheme_color, klass: OpenXml::DrawingML::Properties::ColorSchemeColor
-          value_property :preset_color, klass: OpenXml::DrawingML::Properties::ColorPresetColor
+          property :component_rgb, as: :color_component_rgb
+          value_property :rgb, as: :color_hex_rgb
+          property :hsl, as: :color_hsl
+          value_property :system_color, as: :color_system_color
+          value_property :scheme_color, as: :color_scheme_color
+          value_property :preset_color, as: :color_preset_color
         end
 
       end
