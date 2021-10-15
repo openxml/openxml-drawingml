@@ -5,3 +5,4 @@ rocx-0.1.0.gem
 .rspec-local
 /coverage
 TODO.md
+Gemfile.lock
