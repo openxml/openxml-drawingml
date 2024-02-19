@@ -12,7 +12,7 @@ module OpenXml
 
         def initialize(value)
           super()
-          target_property = value =~ /%/ ? :spacing_percent= : :spacing_points=
+          target_property = value.is_a?(String) && value =~ /%/ ? :spacing_percent= : :spacing_points=
           public_send(target_property, value)
         end
 
