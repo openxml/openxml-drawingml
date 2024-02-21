@@ -4,7 +4,7 @@ module OpenXml
       class PercentageProperty < ValueProperty
 
         def valid?
-          value =~ OpenXml::DrawingML::ST_Percentage
+          value.is_a?(String) && value =~ OpenXml::DrawingML::ST_Percentage
         end
 
         def invalid_message
